@@ -11,7 +11,23 @@ export const recommendationSources: RecommendationSource[] = [
     principle: 'W połowie listopada planujemy pod pogodę i krótki dzień, a nie przeciwko nim. Adršpašské skály są w tym okresie czynne w godz. 8:00–16:30. Słońce zachodzi już około 16:15–16:20, dlatego najważniejsze piesze trasy zaplanowałem na początek dnia.',
     summaryReason: 'Bo łączy trzy różne elementy: niezwykłą architekturę Świdnicy, dwa całkiem odmienne skalne labirynty i miejsca, w których można spokojnie zjeść dobry posiłek. Najważniejsze atrakcje zobaczycie w świetle dziennym, noclegi pozostaną w jednej bazie, a dodatkowe przejazdy nie będą zjadać czasu.',
     finalRecommendation: 'Nie rezygnujcie z Křížovego vrchu przy dobrej pogodzie. To właśnie taki mniejszy, mniej oczywisty punkt — obok dwóch wielkich skalnych miast — sprawia, że ta wyprawa staje się czymś więcej niż standardowym weekendem w Czechach.',
-    highlights: ['Kościół Pokoju w Świdnicy', 'Křížový vrch', 'Teplické skály'],
+   highlights: [
+  {
+    title: 'Kościół Pokoju w Świdnicy',
+    linkUrl: 'https://rpo.dolnyslask.pl/wp-content/uploads/2019/09/obrobione-4.3-Kosciol-pokoju-swidnica-RPDS.04.03.04-02-002016-2-tarraya.jpg',
+    description: 'Największy drewniany barokowy kościół w Europie (UNESCO).'
+  },
+  {
+    title: 'Křížový vrch',
+    linkUrl: 'https://turistickamapa.cz/data_fotos/krizovy-vrch-adrspach-2022_25_4-133315.jpg',
+    description: 'Niezwykły punkt widokowy naprzeciwko skał Adršpachu.'
+  },
+  {
+    title: 'Teplické skály',
+    linkUrl: 'https://cdn-lhr.brandkit.com/accounts/475/files/6NDP5CS9QD9DARHDDK4WHHDGBB/858167-preview.webp?v=63937348207',
+    description: 'Surowy, monumentalny labirynt skalny i głębokie kaniony.'
+  }
+],
     days: [
     {
       dayNumber: 1,
@@ -185,11 +201,23 @@ export const recommendationSources: RecommendationSource[] = [
   summaryReason: 'Ta opcja wyjazdu to perfekcyjnie zbalansowany plan, który łączy ikoniczne atrakcje Skalnego Miasta z ukrytymi, mniej utartymi szlakami regionu Broumovska. Logiczna sekwencja punktów wyeliminowała zbędne przejazdy, dzięki czemu spędzacie czas na chłonięciu widoków, a nie w samochodzie. Zakwaterowanie w kameralnym pałacyku oraz starannie dobrane, klimatyczne restauracje gwarantują wyjazd na najwyższym poziomie komfortu i smaku. To idealna propozycja dla grupy dojrzałych podróżników, którzy cenią autentyczność, spokój i przemyślaną logistykę.',
 
   finalRecommendation: 'Gorąco rekomenduję ten wariant, jeśli szukacie niezapomnianej przygody, która harmonijnie łączy aktywny wypływ na łonie natury z wiecznym klimatem czeskiej kultury i doskonałą kuchnią. Wybór Zámečka Janovičky jako bazy wypadowej da Wam poczucie prywatności i wyjątkowości, a poranne godziny wejść na szlaki pozwolą uniknąć turystycznego tłoku. Plan daje pełne poczucie swobody bez pośpiechu, gwarantując równowagę między wrażeniami estetycznymi a relaksem. To sprawdzony, przemyślany w każdym detalu przepis na doskonały, trzydniowy reset.',
-  highlights: [
-    'Skalne Miasto w Adršpachu oraz dzikie Teplickie Skały',
-    'Trekking granią Broumovskich Stěn i barokowy Klasztor w Broumovie',
-    'Kameralny labirynt Ostaša i obiad w XIX-wiecznym schronisku Hvězda'
-  ],
+ highlights: [
+  {
+    title: 'Skalne Miasto w Adršpachu oraz dzikie Teplickie Skały',
+    linkUrl: 'https://static.wixstatic.com/media/06c62a_2a917813d20d4d8bbedc0163de43d5d8~mv2.jpg/v1/fill/w_980,h_729,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/06c62a_2a917813d20d4d8bbedc0163de43d5d8~mv2.jpg',
+    description: 'Największy drewniany barokowy kościół w Europie (UNESCO).'
+  },
+  {
+    title: 'Trekking granią Broumovskich Stěn i barokowy Klasztor w Broumovie',
+    linkUrl: 'https://thumbs.dreamstime.com/b/monastery-broumov-czech-republic-monastery-broumov-czech-republic-100312161.jpg',
+    description: 'Niezwykły punkt widokowy naprzeciwko skał Adršpachu.'
+  },
+  {
+    title: 'Kameralny labirynt Ostaša i obiad w XIX-wiecznym schronisku Hvězda',
+    linkUrl: 'https://weekendowyturysta.eu/wp-content/uploads/2023/11/Ostas-labirynt-skalny-w-czeskich-Gorach-Stolowych79.jpg',
+    description: 'Surowy, monumentalny labirynt skalny i głębokie kaniony.'
+  }
+],
   days: [
     {
       dayNumber: 1,
@@ -390,10 +418,22 @@ export const recommendationSources: RecommendationSource[] = [
 finalRecommendation:
   'Rekomenduję ten wariant jako najlepszy balans między przygodą, komfortem i realizmem trzydniowego wyjazdu. Nie rezygnuje z głównych atrakcji, a jednocześnie nie przemęcza czwórki osób w wieku około 50 lat — każdy dzień ma jasny rytm: zwiedzanie, obiad, odpoczynek i kolację. Najważniejsze jest wcześniejsze kupno biletów online na Skały Adršpaskie oraz rezerwacja noclegu i kolacji w U Tří růží. Jeśli pogoda w listopadzie będzie szczególnie mokra, warto skrócić opcjonalne fragmenty tras, ale zachować kolejność: Teplice, Adršpach, Broumov.',
   highlights: [
-    'Teplické skály — dzikie wąwozy i skalne miasta',
-    'Skały Adršpaskie — Labirynt, Katedra, Jezioro i Miasto Skalne',
-    'Opactwo benedyktynów w Broumovie oraz Café Dientzenhofer'
-  ],
+  {
+    title: 'Teplické skály — dzikie wąwozy i skalne miasta',
+    linkUrl: 'https://cdn-lhr.brandkit.com/accounts/475/files/6NDP5CS9QD9DARHDDK4WHHDGBB/858167-preview.webp?v=63937348207',
+    description: 'Największy drewniany barokowy kościół w Europie (UNESCO).'
+  },
+  {
+    title: 'Skały Adršpašskie — Labirynt, Katedra, Jezioro i Miasto Skalne',
+    linkUrl: 'https://www.adrspasskeskaly.cz/img/test/photo-009.jpg',
+    description: 'Niezwykły punkt widokowy naprzeciwko skał Adršpachu.'
+  },
+  {
+    title: 'Opactwo benedyktynów w Broumovie oraz Café Dientzenhofer',
+    linkUrl: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgeoEjqynI6PphnEMPOpuCio7GQ8jL1g1xzNo6OPtlt3nAdNRRgUgQcJv4VAArVIePo6-g4FvsLaA15X7TBLr3GHjZ3RmYTek7CK55sxd3HdPmmPALYho2bWRZ76fJj_ZdIQFekAUgoozc/s1600/abro++51++.jpg',
+    description: 'Surowy, monumentalny labirynt skalny i głębokie kaniony.'
+  }
+],
   days: [
     {
       dayNumber: 1,

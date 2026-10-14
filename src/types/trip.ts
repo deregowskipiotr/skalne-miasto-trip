@@ -14,6 +14,12 @@ export interface DayPlan {
   items: ItineraryItem[];
 }
 
+export interface HighlightItem {
+  title: string;
+  linkUrl: string;
+  description?: string;
+}
+
 export interface RecommendationSource {
   id: string;
   name: string;
@@ -25,5 +31,5 @@ export interface RecommendationSource {
   summaryReason?: string;        // "Bo łączy trzy różne elementy..."
   finalRecommendation?: string; // "Nie rezygnujcie z Křížovego vrchu..."
   days: DayPlan[];
-  highlights: string[];
+  highlights: HighlightItem[];
 }

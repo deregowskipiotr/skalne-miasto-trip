@@ -1,6 +1,7 @@
 import React from 'react';
 import { 
   Sparkles, 
+  ExternalLink,
   MapPin, 
   ArrowRight, 
   Compass, 
@@ -80,32 +81,59 @@ export const OverviewView: React.FC = () => {
       </section>
 
       {/* Plan Highlights Grid */}
-      <section className="space-y-3.5">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Sparkles className="w-4 h-4 text-decor" />
-            <h3 className="text-lg sm:text-xl font-bold tracking-normal text-text">
-              Główne punkty tej propozycji
-            </h3>
+      {/* Key Highlights Grid */}
+<section className="space-y-3.5">
+  <div className="flex items-center justify-between">
+    <div className="flex items-center gap-2">
+      <Sparkles className="w-4 h-4 text-decor" />
+      <h3 className="text-lg sm:text-xl font-bold tracking-normal text-text">
+        Główne punkty tej propozycji
+      </h3>
+    </div>
+    <span className="text-xs text-text/50">
+      {activeSource.highlights.length} wybrane atrakcje
+    </span>
+  </div>
+
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
+    {activeSource.highlights.map((highlight, index) => (
+      <a
+        key={index}
+        href={highlight.linkUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative rounded-md border border-decor/25 bg-main/70 backdrop-blur-md p-4 transition-all duration-500 hover:border-decor/70 hover:bg-main/95 hover:shadow-[0_0_20px_rgba(217,66,239,0.2)] flex flex-col justify-between gap-3 cursor-pointer outline-none"
+      >
+        <div className="flex items-start justify-between gap-2">
+          {/* Number badge */}
+          <span className="shrink-0 text-[10px] uppercase font-bold px-2 py-0.5 rounded-md border border-decor/40 bg-decor/15 text-decor">
+            0{index + 1}
+          </span>
+
+          {/* External Link Icon with Glow */}
+          <div className="flex items-center gap-1 text-xs text-decor/70 group-hover:text-decor transition-colors duration-300">
+            <span className="text-[11px] font-medium opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              Otwórz
+            </span>
+            <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3.5">
-          {activeSource.highlights.map((highlight, index) => (
-            <div
-              key={index}
-              className="group rounded-md border border-decor/20 bg-main/60 backdrop-blur-md p-4 transition-colors duration-500 hover:border-decor/50 hover:bg-main/90 flex items-start gap-3"
-            >
-              <div className="shrink-0 w-7 h-7 rounded-md border border-decor/30 bg-decor/10 flex items-center justify-center text-xs font-semibold text-decor">
-                0{index + 1}
-              </div>
-              <p className="text-sm font-medium tracking-normal text-text group-hover:text-white transition-colors duration-500 my-auto">
-                {highlight}
-              </p>
-            </div>
-          ))}
+        {/* Text Content */}
+        <div className="space-y-1">
+          <h4 className="text-sm sm:text-base font-semibold tracking-normal text-text group-hover:text-white transition-colors duration-300">
+            {highlight.title}
+          </h4>
+          {highlight.description && (
+            <p className="text-xs text-text/65 leading-relaxed group-hover:text-text/85 transition-colors duration-300">
+              {highlight.description}
+            </p>
+          )}
         </div>
-      </section>
+      </a>
+    ))}
+  </div>
+</section>
 
       {/* 3-Day Journey Blueprint Preview */}
       <section className="space-y-3.5">
